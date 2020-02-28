@@ -10,9 +10,14 @@
        http://www.springframework.org/schema/mvc
        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
     <!--   配置包扫描器，扫描@Controller注解的类-->
-    <context:component-scan base-package="com.seu.controller"/>
+    <context:component-scan base-package="com.seu.core.controller"/>
     <!--    配置注解驱动-->
     <mvc:annotation-driven/>
+    <!--配置静态资源的访问映射，此配置中的文件，将不被前端控制器拦截 -->
+    <mvc:resources mapping="/layui/lay/**" location="layui/lay/"/>
+    <mvc:resources mapping="/layui/css/**" location="/layui/css/"/>
+    <mvc:resources mapping="/layui/font/**" location="/layui/font/"/>
+    <mvc:resources mapping="/layui/images/**" location="/layui/images/"/>
     <!--    配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>

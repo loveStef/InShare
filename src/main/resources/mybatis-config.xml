@@ -4,6 +4,6 @@
 <configuration>
     <!--    配置别名-->
     <typeAliases>
-        <package name="com.ssm.po"/>
+        <package name="com.seu.core.po"/>
     </typeAliases>
 </configuration>
