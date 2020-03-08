@@ -14,13 +14,15 @@
     <!--    配置注解驱动-->
     <mvc:annotation-driven/>
     <!--配置静态资源的访问映射，此配置中的文件，将不被前端控制器拦截 -->
-    <mvc:resources mapping="/layui/lay/**" location="layui/lay/"/>
-    <mvc:resources mapping="/layui/css/**" location="/layui/css/"/>
-    <mvc:resources mapping="/layui/font/**" location="/layui/font/"/>
-    <mvc:resources mapping="/layui/images/**" location="/layui/images/"/>
+    <mvc:resources mapping="/static/js/**" location="/static/js/"/>
+    <mvc:resources mapping="/static/css/**" location="/static/css/"/>
+    <mvc:resources mapping="/static/font/**" location="/static/fonts/"/>
+    <mvc:resources mapping="/static/images/**" location="/static/images/"/>
+    <mvc:resources mapping="/static/lib/layui/**" location="/static/lib/layui/"/>
     <!--    配置视图解析器-->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
 </beans>
+
