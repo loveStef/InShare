@@ -78,7 +78,7 @@
                                 <thead>
                                     <tr>
                                         <th>
-                                            <input type="checkbox" lay-skin="primary" >
+                                            <input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose" >
                                         </th>
                                         <th class="sortable" data-field="username">论文中文名称</th>
                                         <th class="sortable" data-field="nickname">论文英文名称</th>
@@ -99,7 +99,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" lay-skin="primary" >
+                                            <input type="checkbox" class="checkboxitem" lay-skin="primary" >
                                         </td>
                                         <td>a</td>
                                         <td>3</td>
@@ -122,7 +122,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <input type="checkbox" lay-skin="primary" >
+                                            <input type="checkbox" class="checkboxitem" lay-skin="primary" >
                                         </td>
                                         <td>b</td>
                                         <td>3</td>
@@ -224,7 +224,7 @@
             <%--                                    <i class="layui-icon layui-icon-ok"></i></label>--%>
             <%--                            </th>--%>
                                             <th>
-                                                <input type="checkbox" lay-skin="primary" >
+                                                <input type="checkbox" lay-filter="allChoose" lay-skin="primary" >
                                             </th>
                                             <th class="sortable" data-field="username">会议类别</th>
                                             <th class="sortable" data-field="username">论文中文名称</th>
@@ -247,7 +247,7 @@
                                     <tbody class="layui-table-body">
                                         <tr>
                                             <td>
-                                                <input type="checkbox" lay-skin="primary" >
+                                                <input class="checkboxitem" type="checkbox" lay-skin="primary" >
                                             </td>
                                             <td>2</td>
                                             <td>3</td>

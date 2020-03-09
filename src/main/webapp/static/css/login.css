@@ -12,6 +12,30 @@
     height: 50%;
 }
 
+.layui-layout-login .login-title{
+    height:60px;
+    width:700px;
+    position: absolute;
+    top: 16%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-size: 35px;
+    font-weight: normal;
+    color:#ffffff;
+    text-align: center;
+    text-shadow:0px 2px 2px rgba(0, 0, 0, 0.3);
+    letter-spacing:4px;
+}
+.layui-layout-login .login-title span{
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*top:80%;*/
+    /*transform:translate(-50%,-50%);*/
+    font-size: 10px;
+    font-weight: normal;
+    color:#ffffff;
+    text-align: center;
+}
 .layui-layout-login .login-box{
     width:400px;
     height:350px;

@@ -30,7 +30,7 @@
                             <dd><a href=""><i class="fa fa-lock"></i>修改密码</a></dd>
                         </dl>
                     </li>
-                    <li class="layui-nav-item"><a href=""><i class="layui-icon layui-icon-logout"></i>退出</a></li>
+                    <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/logout.action"><i class="layui-icon layui-icon-logout"></i>退出</a></li>
                 </ul>
             </div>
             <!--    侧边栏-->

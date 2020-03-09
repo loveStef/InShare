@@ -41,6 +41,16 @@ public class MainController
 //    @RequestMapping(value = "/test.action")
 //    public String test(){return "test";}
 
+    /**
+     * 退出登录
+     */
+    @RequestMapping(value = "/logout.action")
+    public String logout(HttpSession session){
+        //清楚session
+        session.invalidate();
+        //重定向到登录页面的跳转方法
+        return "redirect:login.action";
+    }
 }
 
 

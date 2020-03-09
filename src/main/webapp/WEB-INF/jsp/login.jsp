@@ -21,6 +21,10 @@
         <div class="login-bg">
             <div class="cover"></div>
         </div>
+        <div class="login-title">
+            InShare
+            <span>工业设计系科技成果网络共享平台</span>
+        </div>
         <div class="login-box">
             <div class="login-register-title">
                 <a class="register-title-login" href="${pageContext.request.contextPath}/register.action">注册</a>

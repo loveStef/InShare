@@ -69,7 +69,7 @@
                                     <%--<i class="layui-icon layui-icon-ok"></i></label>--%>
                                     <%--</th>--%>
                                     <th>
-                                        <input type="checkbox" lay-skin="primary" >
+                                        <input type="checkbox" lay-filter="allChoose" lay-skin="primary" >
                                     </th>
                                     <th class="sortable" data-field="username">奖项名称</th>
                                     <th class="sortable" data-field="nickname">获奖者</th>
@@ -86,7 +86,7 @@
                             <tbody>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" lay-skin="primary" >
+                                        <input type="checkbox"  class="checkboxitem" lay-skin="primary" >
                                     </td>
                                     <td>2</td>
                                     <td>3</td>
