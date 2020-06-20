@@ -28,8 +28,6 @@
                             <div class="layui-input-inline">
                                 <input type="text" name="title" required  lay-verify="required" placeholder="请输入获奖者" autocomplete="off" class="layui-input">
                             </div>
-                        </div>
-                        <div class="layui-form-item">
                             <label class="layui-form-label">专利类型</label>
                             <div class="layui-input-inline">
                                 <select class="layui-select" name="status"lay-verify="required" >
@@ -39,6 +37,8 @@
                                     <option value="1">外观</option>
                                 </select>
                             </div>
+                        </div>
+                        <div class="layui-form-item">
                             <label class="layui-form-label">申报状态</label>
                             <div class="layui-input-inline">
                                 <select class="layui-select" name="status"lay-verify="required" >
@@ -73,10 +73,6 @@
                         <table class="layui-table">
                             <thead>
                             <tr>
-                                <%--<th class="timo-table-checkbox">--%>
-                                <%--<label class="timo-checkbox"><input type="checkbox">--%>
-                                <%--<i class="layui-icon layui-icon-ok"></i></label>--%>
-                                <%--</th>--%>
                                 <th>
                                     <input type="checkbox" lay-filter="allChoose" lay-skin="primary" >
                                 </th>

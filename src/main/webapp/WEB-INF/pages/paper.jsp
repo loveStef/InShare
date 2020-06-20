@@ -219,10 +219,6 @@
                                 <table class="layui-table">
                                     <thead class="layui-table-header">
                                         <tr>
-            <%--                            <th class="timo-table-checkbox">--%>
-            <%--                                <label class="timo-checkbox"><input type="checkbox">--%>
-            <%--                                    <i class="layui-icon layui-icon-ok"></i></label>--%>
-            <%--                            </th>--%>
                                             <th>
                                                 <input type="checkbox" lay-filter="allChoose" lay-skin="primary" >
                                             </th>

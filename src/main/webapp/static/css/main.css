@@ -24,19 +24,131 @@
 	/*#009688*/
 	color:rgba(255,255,255,1);
 }
-.layui-layout-admin .layui-header .layui-nav *{
-	font-size:16px;
+
+.layui-layout-admin .layui-header .layui-nav .layui-nav-child dd .layui-this a{
+	background-color: #009688 ;
 }
+
 .layui-layout-admin .layui-header .layui-nav-child .fa{
 	margin-right: 10px;
 }
+
+.layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this {
+	background-color:#009688 ;
+}
+
+
 .layui-layout-admin .layui-header .layui-icon-logout{
 	margin-right: 5px;
 }
-.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+
+.layui-layout-admin .layui-header .layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
 	background-color:#009688;
 }
 
+
+
+
+/*个人中心页面*/
+.user-info-page .user-info{
+	position: absolute;
+	left: 0;
+	/*width: 180px;*/
+	height: 380px;
+	border-right: 1px solid #cccccc;
+	padding:0 20px;
+}
+.user-info-page .user-info .user-avatar-box{
+	position: relative;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 4px solid #d9dde1;
+	cursor: pointer;
+}
+.user-info-page .user-info .user-avatar-box .user-avatar{
+	width: 100%;
+	height: 100%;
+}
+
+.user-info-page .user-info .user-avatar-box .edit-avatar{
+	position: absolute;
+	left: 0;
+	bottom: -34px;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	color: #ffffff;
+	text-align: center;
+	background-color: rgba(0,0,0,0.6);
+	transition: bottom 0.2s;
+}
+.user-info-page .user-info .user-avatar-box:hover .edit-avatar{
+	bottom: 0;
+}
+.user-info-page .user-info .detail-info{
+	margin-top: 18px;
+	line-height: 2;
+	font-size: 14px;
+}
+.user-info-page .user-info .detail-info li{
+	padding-left: 12px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	cursor: default;
+}
+.user-info-page .user-edit{
+	position: absolute;
+	left: 220px;
+	right: 0;
+	height: 380px;
+}
+
+.user-info-page .user-edit .user-edit-main{
+	opacity: 0.7;
+}
+.user-info-page .canvas-panel{
+	display: none;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	cursor: move;
+	overflow: hidden;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQAQMAAAAlPW0iAAAAA3NCSVQICAjb4U/gAAAABlBMVEXMzMz////TjRV2AAAACXBIWXMAAArrAAAK6wGCiw1aAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAABFJREFUCJlj+M/AgBVhF/0PAH6/D/HkDxOGAAAAAElFTkSuQmCC);
+}
+.user-info-page .canvas-bg{
+	position: absolute;
+}
+.user-info-page .canvas-shade{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+}
+.user-info-page .canvas-crop{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 280px;
+	height: 280px;
+	background-color: #FFFFFF;
+	border: 1px solid rgb(40, 121, 255);
+	-webkit-transform: translate(-141px, -141px);
+	transform: translate(-141px,-141px);
+}
+.user-info-page .canvas-group{
+	position: absolute;
+	right: 14px;
+	bottom: 10px;
+	display: none;
+}
+.user-info-page .canvas-group .layui-btn-primary:hover{
+	opacity: 1;
+}
 
 
 /* 侧边栏 */
@@ -317,6 +429,13 @@
 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAAZUlEQVQ4y2NgGAWjYBSggaqGu5FA/BOIv2PBIPFEUgxjB+IdQPwfC94HxLykus4GiD+hGfQOiB3J8SojEE9EM2wuSJzcsFMG4ttQgx4DsRalkZENxL+AuJQaMcsGxBOAmGvopk8AVz1sLZgg0bsAAAAASUVORK5CYII=");
 }
 
+
+/**輸入框**/
+
+.inshare-layout-page .layui-input:hover, .layui-textarea:hover {
+	border-color: #009688 !important;
+}
+
 /*复选框*/
 .layui-form-checkbox[lay-skin=primary]:hover i{
 	border-color: #009688;
@@ -347,41 +466,95 @@
 }
 
 /*組按鈕*/
-.btn-group{
+
+.layui-btn-group .layui-nav{
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
 }
-.caret {
-	display: inline-block;
-	width: 0;
-	height: 0;
-	margin-left: 2px;
-	vertical-align: middle;
-	border-top: 4px dashed;
-	border-top: 4px solid\9;
-	border-right: 4px solid transparent;
-	border-left: 4px solid transparent;
-}
-.btn-group .layui-nav-child{
-	top: initial;
-	left: -20px;
-	right: 0;
-	margin-top: 2px;
-}
-.btn-group .layui-nav-child a{
-	display: block;
-	padding: 0 20px;
-}
-.btn-group .layui-nav-child a:hover {
-	background-color: #f2f2f2;
-	color: #000;
-}
-.btn-group.show .layui-nav-child{
-	display: block;
-}
+
+/*.btn-group{*/
+/*	position: relative;*/
+/*	display: inline-block;*/
+/*	vertical-align: middle;*/
+/*}*/
+/*.caret {*/
+/*	display: inline-block;*/
+/*	width: 0;*/
+/*	height: 0;*/
+/*	margin-left: 2px;*/
+/*	vertical-align: middle;*/
+/*	border-top: 4px dashed;*/
+/*	border-top: 4px solid\9;*/
+/*	border-right: 4px solid transparent;*/
+/*	border-left: 4px solid transparent;*/
+/*}*/
+/*.btn-group .layui-nav-child{*/
+/*	top: initial;*/
+/*	left: -20px;*/
+/*	right: 0;*/
+/*	margin-top: 2px;*/
+/*}*/
+/*.btn-group .layui-nav-child a{*/
+/*	display: block;*/
+/*	padding: 0 20px;*/
+/*}*/
+/*.btn-group .layui-nav-child a:hover {*/
+/*	background-color: #f2f2f2;*/
+/*	color: #000;*/
+/*}*/
+/*.btn-group.show .layui-nav-child{*/
+/*	display: block;*/
+/*}*/
 
 
+/* 添加/编辑页面 */
+.inshare-compile{
+	padding-top: 20px;
+}
+/*输入框*/
+.inshare-compile .layui-input-inline{
+	width: 240px;
+}
+.inshare-compile .layui-input-inline input:hover,
+.inshare-compile .layui-input-block input:hover,
+.inshare-compile .layui-input-inline textarea:hover,
+.inshare-compile .layui-input-block textarea:hover{
+	border-color: #009688!important;
+}
+/*框后備注*/
+.inshare-compile .layui-input-info{
+	float: left;
+	margin-left: 4px;
+	height: 38px;
+	line-height: 38px;
+	color: #747474;
+}
 
+/*文本框*/
+.inshare-compile .layui-form-text{
+	padding-right: 20px;
+}
+.inshare-compile .layui-form-text .layui-textarea{
+	max-width: 360px;
+	min-height: 80px;
+}
+.inshare-compile .layui-form-text .layui-textarea.textarea-fill{
+	max-width: initial;
+}
+
+/**底部分隔綫*/
+.inshare-compile .inshare-finally{
+	border-top: 1px solid #ddd;
+	padding: 14px 0 0 0;
+	margin: 10px 20px 20px;
+}
+
+/**底部按鈕**/
+.inshare-compile .inshare-finally .btn-secondary{
+	color: #FFF;
+	background-color: #737c85;
+	border-color: #737c85;
+}
 
 

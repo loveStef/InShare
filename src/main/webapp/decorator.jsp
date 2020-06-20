@@ -26,8 +26,9 @@
                             Rita
                         </a>
                         <dl class="layui-nav-child">
-                            <dd><a href=""><i class="fa fa-user-o"></i>个人信息</a></dd>
-                            <dd><a href=""><i class="fa fa-lock"></i>修改密码</a></dd>
+                            <!--data-title——html data 自定义属性-->
+                            <dd><a class="open-popup"  data-title="个人信息" data-url="${pageContext.request.contextPath}/userInfo.action" data-size="680,464"><i class="fa fa-user-o"></i>个人信息</a></dd>
+                            <dd><a class="open-popup" data-title="修改密码" data-url="${pageContext.request.contextPath}/editPwd.action" data-size="456,296" ><i class="fa fa-lock"></i>修改密码</a></dd>
                         </dl>
                     </li>
                     <li class="layui-nav-item"><a href="${pageContext.request.contextPath}/logout.action"><i class="layui-icon layui-icon-logout"></i>退出</a></li>
@@ -37,7 +38,7 @@
             <div class="layui-side layui-bg-black">
                 <div class="layui-side-scroll">
                     <div class="layui-side-user">
-                        <img class="layui-side-user-avatar open-popup" data-size="680,464" alt="头像" src="http://t.cn/RCzsdCq" >
+                        <img class="layui-side-user-avatar open-popup" data-title="个人信息" data-url="${pageContext.request.contextPath}/userInfo.action" data-size="680,464" alt="头像" src="http://t.cn/RCzsdCq" >
                         <div>
                             <p class="layui-side-user-name">Rita</p>
                             <p class="layui-side-user-designation">在线</p>

@@ -54,18 +54,18 @@ layui.use(['element', 'form', 'layer','laydate', 'upload','table'], function () 
 
 
     /* 下拉按钮组 */
-    $(".btn-group").click(function (e) {
-        e.stopPropagation();
-        $this = $(this);
-        $this.toggleClass("show");
-        $(document).one("click", function () {
-            if ($this.hasClass("show")) {
-                $this.removeClass("show");
-            }
-        });
-    });
+    // $(".btn-group").click(function (e) {
+    //     e.stopPropagation();
+    //     $this = $(this);
+    //     $this.toggleClass("show");
+    //     $(document).one("click", function () {
+    //         if ($this.hasClass("show")) {
+    //             $this.removeClass("show");
+    //         }
+    //     });
+    // });
 
-    // 复选框全选
+   /* 复选框全选*/
     form.on('checkbox(allChoose)', function(data){
         var a = data.elem.checked;
         if (a == true) {
@@ -76,6 +76,8 @@ layui.use(['element', 'form', 'layer','laydate', 'upload','table'], function () 
             form.render('checkbox');
         }
     });
+
+
 
 
     /* 触发字段排序 */
@@ -128,4 +130,40 @@ layui.use(['element', 'form', 'layer','laydate', 'upload','table'], function () 
         ,type: 'year'
         ,range: true
     });
+
+
+    /* 添加/修改弹出层 */
+    $(document).on("click", ".open-popup, .open-popup-param", function () {
+        var title = $(this).data("title");
+        var url = $(this).attr("data-url");
+        var size = $(this).attr("data-size"), layerArea;
+        if (size === undefined || size === "auto" || size === "max") {
+            layerArea = ['50%', '80%'];
+        }else if (size.indexOf(',') !== -1) {
+            var split = size.split(",");
+            layerArea = [split[0] + 'px', split[1] + 'px'];
+        }
+        window.layerIndex = layer.open({
+            type: 2,
+            title: title,
+            shadeClose: true,
+            maxmin: true,
+            area: layerArea,
+            content: [url, 'on']
+        });
+        if (size === "max") {
+            layer.full(layerIndex);
+        }
+    });
+
+    /* get方式异步 */
+    $(document).on("click", ".ajax-get", function (e) {
+        e.preventDefault();
+        var msg = $(this).data("msg");
+            layer.confirm(msg + '？', {
+                title: '提示',
+                btn: ['确认', '取消']});
+    });
+
+
 });

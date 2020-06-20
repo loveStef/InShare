@@ -39,31 +39,33 @@
                                 </button>
                             </div>
                             <div class="layui-inline pull-right ">
-                                <button class="layui-btn open-popup" data-title="添加用户"
+                                <button class="layui-btn open-popup" data-title="添加用户" data-url="${pageContext.request.contextPath}/addUser.action"
                                         data-size="auto">
                                     <i class="fa fa-plus"></i> 新增
                                 </button>
-                                <div class="btn-group">
-                                    <button class="layui-btn">用户操作<span class="caret"></span></button>
-                                    <dl class="layui-nav-child layui-anim layui-anim-upbit">
-                                        <dd><a class="ajax-status" >角色分配</a></dd>
-                                        <dd><a class="ajax-status" >重置密码</a></dd>
-                                        <dd><a class="ajax-status" >删除用户</a></dd>
-                                    </dl>
+                                <div class="layui-btn-group">
+                                    <ul  class="layui-nav layui-bg-green" style="padding:0px 5px 0px 0px;">
+                                        <li class="layui-nav-item" style="line-height: 38px;font-size: 14px;">
+                                            <a href="javascript:;" style="color:white;padding: 0px 20px 0px 15px;">用户操作<span class="layui-nav-more"></span></a>
+                                            <dl class="layui-nav-child" style="top:38px">
+                                                <dd>
+                                                    <a class="open-popup" href="#" data-title="角色分配" data-url="${pageContext.request.contextPath}/roleManage.action" data-size="480,400" >角色分配</a>
+                                                </dd>
+                                                <dd><a class="open-popup"  href="#" data-title="重置密码" data-url="${pageContext.request.contextPath}/resetPwd.action"data-size="456,242" >重置密码</a></dd>
+                                                <dd><a class="ajax-get"  attr="data-msg='您是否删除'" href="#" data-title="删除用户" >删除用户</a></dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </form>
-                    <%--<table class="layui-table timo-table">--%>
                     <div class="inshare-table-wrap">
                         <table class="layui-table">
                             <thead>
                                 <tr>
                                     <th>
-                                        <%--<label class="timo-checkbox">--%>
                                         <input type="checkbox" name="" lay-skin="primary" lay-filter="allChoose" >
-                                        <%--<i class="layui-icon layui-icon-ok"></i>--%>
-                                        <%--</label>--%>
                                     </th>
                                     <th class="sortable" data-field="username">姓名</th>
                                     <th class="sortable" data-field="nickname">学号</th>
@@ -74,12 +76,13 @@
                                     <th class="sortable" data-field="createDate">创建时间</th>
                                     <th>状态</th>
                                     <th>操作</th>
+<%--                                    <th>操作</th>--%>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" class="checkboxitem" name="" lay-skin="primary" >
+                                        <input type="checkbox" class="checkboxitem" lay-skin="primary" >
                                     </td>
                                     <td>2</td>
                                     <td>3</td>
@@ -92,6 +95,10 @@
                                     <td>
                                         <input type="checkbox" name="switch" lay-skin="switch" lay-text="启用|冻结">
                                     </td>
+<%--                                    <td>--%>
+<%--                                        <a class="open-popup" data-title="角色分配" data-url="${pageContext.request.contextPath}/roleManage.action"--%>
+<%--                                           data-size="600,570" href="#">角色分配</a>--%>
+<%--                                    </td>--%>
                                 </tr>
                             </tbody>
                         </table>
@@ -99,5 +106,8 @@
                 </div>
             </div>
         </div>
+        <script>
+
+        </script>
     </body>
 </html>

@@ -18,5 +18,10 @@
 
   <!-- Exclude path from decoration. -->
   <mapping path="/register.action" exclue="true"/>
-  <mapping path="/login.action" exclue="true"/>>
+  <mapping path="/login.action" exclue="true"/>
+  <mapping path="/userInfo.action" exclue="true"/>
+  <mapping path="/editPwd.action" exclue="true"/>
+  <mapping path="/addUser.action" exclue="true"/>
+  <mapping path="/roleManage.action" exclue="true"/>
+  <mapping path="/resetPwd.action" exclue="true"/>
 </sitemesh>
