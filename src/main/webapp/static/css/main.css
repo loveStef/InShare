@@ -547,7 +547,7 @@
 .inshare-compile .inshare-finally{
 	border-top: 1px solid #ddd;
 	padding: 14px 0 0 0;
-	margin: 10px 20px 20px;
+	margin: 10px 0px;
 }
 
 /**底部按鈕**/
@@ -557,4 +557,14 @@
 	border-color: #737c85;
 }
 
-
+/**添加期刊**/
+.inshare-paper .layui-input-inline{
+	width:360px;
+}
+.inshare-paper .layui-form-label {
+	width:120px;
+}
+/**添加专利**/
+.inshare-patent .layui-form-label {
+	width:200px;
+}

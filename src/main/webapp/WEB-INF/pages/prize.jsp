@@ -53,7 +53,7 @@
                                 </button>
                             </div>
                             <div class="layui-inline pull-right ">
-                                <button class="layui-btn open-popup" data-title="添加奖项"
+                                <button class="layui-btn open-popup" data-title="添加奖项" data-url="${pageContext.request.contextPath}/addPrize.action"
                                         data-size="auto">
                                     <i class="fa fa-plus"></i> 新增
                                 </button>

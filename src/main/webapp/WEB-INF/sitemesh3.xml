@@ -24,4 +24,8 @@
   <mapping path="/addUser.action" exclue="true"/>
   <mapping path="/roleManage.action" exclue="true"/>
   <mapping path="/resetPwd.action" exclue="true"/>
+  <mapping path="/addJournal.action" exclue="true"/>
+  <mapping path="/addConference.action" exclue="true"/>
+  <mapping path="/addPrize.action" exclue="true"/>
+  <mapping path="/addPatent.action" exclue="true"/>
 </sitemesh>

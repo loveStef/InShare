@@ -66,7 +66,7 @@
                                     </button>
                                 </div>
                                 <div class="layui-inline pull-right ">
-                                    <button class="layui-btn open-popup" data-title="添加期刊"
+                                    <button class="layui-btn open-popup" data-title="添加期刊" data-url="${pageContext.request.contextPath}/addJournal.action"
                                             data-size="auto">
                                         <i class="fa fa-plus"></i> 新增
                                     </button>
@@ -207,7 +207,7 @@
                                     </button>
                                 </div>
                                 <div class="layui-inline pull-right ">
-                                    <button class="layui-btn open-popup" data-title="添加期刊"
+                                    <button class="layui-btn open-popup" data-title="添加会议" data-url="${pageContext.request.contextPath}/addConference.action"
                                             data-size="auto">
                                         <i class="fa fa-plus"></i> 新增
                                     </button>

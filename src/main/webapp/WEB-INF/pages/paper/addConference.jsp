@@ -1,19 +1,21 @@
 <%--
   Created by IntelliJ IDEA.
   User: Rita
-  Date: 2020/4/10
-  Time: 14:17
+  Date: 2020/6/21
+  Time: 0:46
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Inshare新增期刊</title>
-    <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/lib/layui/css/layui.css">
-    <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/font-awesome.min.css">
-    <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/main.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Inshare新增会议</title>
+        <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/lib/layui/css/layui.css">
+        <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/font-awesome.min.css">
+        <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/main.css">
+    </head>
 </head>
 <body>
 <div class="layui-form inshare-compile inshare-paper">
@@ -21,13 +23,24 @@
         <div class="layui-form-item">
             <label class="layui-form-label required">论文中文名称</label>
             <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="journalcn"  placeholder="请输入论文中文名称">
+                <input class="layui-input" type="text" name="conferencecn"  placeholder="请输入论文中文名称">
             </div>
         </div>
         <div class="layui-form-item">
             <label class="layui-form-label required">论文英文名称</label>
             <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="journalen" placeholder="请输入论文英文名称">
+                <input class="layui-input" type="text" name="conferenceen" placeholder="请输入论文英文名称">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">论文类别</label>
+            <div class="layui-input-inline">
+                <select name="conferencestyle" lay-verify="required">
+                    <option value=""></option>
+                    <option value="0">特邀报告</option>
+                    <option value="1">分组报告</option>
+                    <option value="2">墙报展示</option>
+                </select>
             </div>
         </div>
         <div class="layui-form-item">
@@ -37,9 +50,9 @@
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label required">期刊名称</label>
+            <label class="layui-form-label required">会议名称</label>
             <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="journalname" placeholder="请输入期刊名称">
+                <input class="layui-input" type="text" name="journalname" placeholder="请输入会议名称">
             </div>
         </div>
         <div class="layui-form-item">
@@ -72,9 +85,9 @@
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">卷号/期号/起止页面</label>
+            <label class="layui-form-label">起止页码</label>
             <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="journalno" placeholder="请输入卷号/期号/起止页面">
+                <input class="layui-input" type="text" name="conferenceno" placeholder="请输入起止页码">
             </div>
         </div>
         <div class="layui-form-item">
@@ -103,7 +116,7 @@
         </div>
 
 
-        <div class="layui-form-item inshare-finally" >
+        <div class="layui-form-item inshare-finally">
             <label class="layui-form-label"></label>
             <div class="layui-input-inline">
                 <button class="layui-btn ajax-submit"><i class="fa fa-check-circle"></i> 保存</button>

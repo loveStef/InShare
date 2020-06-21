@@ -98,6 +98,38 @@ public class MainController {
     public String resetPwd() {
         return "user/resetPwd";
     }
+
+    /**
+     * 添加期刊
+     */
+    @RequestMapping(value = "/addJournal.action")
+    public String addJournal() {
+        return "paper/addJournal";
+    }
+
+    /**
+     * 添加会议
+     */
+    @RequestMapping(value = "/addConference.action")
+    public String addConference() {
+        return "paper/addConference";
+    }
+    /**
+     * 添加奖项
+     */
+    @RequestMapping(value = "/addPrize.action")
+    public String addPrize() {
+        return "prize/addPrize";
+    }
+
+    /**
+     * 添加专利
+     */
+    @RequestMapping(value = "/addPatent.action")
+    public String addPatent() {
+        return "patent/addPatent";
+    }
+
 }
 
 

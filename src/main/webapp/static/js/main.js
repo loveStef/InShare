@@ -131,7 +131,16 @@ layui.use(['element', 'form', 'layer','laydate', 'upload','table'], function () 
         ,range: true
     });
 
-
+    //选择日期
+    laydate.render({
+        elem: '#add-prize-calender'
+        ,trigger:'click'});
+    laydate.render({
+        elem: '#acceptance-date'
+        ,trigger:'click'});
+    laydate.render({
+        elem: '#authorization-date'
+        ,trigger:'click'});
     /* 添加/修改弹出层 */
     $(document).on("click", ".open-popup, .open-popup-param", function () {
         var title = $(this).data("title");
@@ -151,6 +160,7 @@ layui.use(['element', 'form', 'layer','laydate', 'upload','table'], function () 
             area: layerArea,
             content: [url, 'on']
         });
+
         if (size === "max") {
             layer.full(layerIndex);
         }

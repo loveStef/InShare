@@ -34,8 +34,8 @@
         <div class="layui-form-item">
             <label class="layui-form-label">选择角色</label>
             <div class="layui-input-inline">
-                <input type="radio" name="sex" value="1" title="管理员" checked><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>男</div></div>
-                <input type="radio" name="sex" value="2" title="普通用户"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>女</div></div>
+                <input type="radio" name="sex" value="1" title="管理员" checked><div class="layui-unselect layui-form-radio layui-form-radioed"><i class="layui-anim layui-icon"></i><div>管理员</div></div>
+                <input type="radio" name="sex" value="2" title="普通用户"><div class="layui-unselect layui-form-radio"><i class="layui-anim layui-icon"></i><div>普通用户</div></div>
             </div>
         </div>
         <div class="layui-form-item">
