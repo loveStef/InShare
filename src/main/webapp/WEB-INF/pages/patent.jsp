@@ -103,8 +103,8 @@
                                 <td>9</td>
                                 <td>10</td>
                                 <td>
-                                    <a class="open-popup" data-title="编辑" data-size="600,570" href="#">编辑</a>
-                                    <a class="open-popup" data-title="详细信息" data-size="800,600" href="#">详细</a>
+                                    <a class="open-popup" data-title="编辑专利" data-size="600,570" data-url="${pageContext.request.contextPath}/editPatent.action">编辑</a>
+                                    <a class="open-popup" data-title="详细信息" data-size="800,600" data-url="${pageContext.request.contextPath}/detailPatent.action">详细</a>
                                     <a class="ajax-get" >删除</a>
                                 </td>
                             </tr>

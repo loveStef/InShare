@@ -508,7 +508,9 @@
 /*}*/
 
 
-/* 添加/编辑页面 */
+
+/*添加/编辑页面*/
+
 .inshare-compile{
 	padding-top: 20px;
 }
@@ -557,7 +559,7 @@
 	border-color: #737c85;
 }
 
-/**添加期刊**/
+/**添加论文**/
 .inshare-paper .layui-input-inline{
 	width:360px;
 }
@@ -566,5 +568,33 @@
 }
 /**添加专利**/
 .inshare-patent .layui-form-label {
-	width:200px;
+	width:180px;
+}
+
+/**添加奖项**/
+.inshare-prize .layui-form-label {
+	width:100px;
+}
+
+
+/* 详情页面 */
+.inshare-detail-page{
+	padding: 12px;
+}
+.inshare-detail-title{
+	padding:10px 15px;
+	font-weight: bold;
+	border: 1px solid #c9ced1;
+	border-bottom: none;
+}
+.inshare-detail-table{
+	color: #000000;
+	margin: 0 0 12px;
+}
+.inshare-detail-table th{
+	font-weight: bold;
+}
+.inshare-detail-table th,
+.inshare-detail-table td{
+	border: 1px solid #c9ced1;
 }

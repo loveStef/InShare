@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Rita
-  Date: 2020/4/10
-  Time: 14:21
+  Date: 2020/6/21
+  Time: 16:29
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,14 +10,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Inshare期刊详情</title>
+    <title>Inshare会议详情</title>
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/lib/layui/css/layui.css">
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/font-awesome.min.css">
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/main.css">
 </head>
 <body>
 <div class="inshare-detail-page">
-    <div class="inshare-detail-title">期刊详情</div>
+    <div class="inshare-detail-title">会议详情</div>
     <table class="layui-table inshare-detail-table">
         <tbody>
         <tr>
@@ -29,11 +29,15 @@
             <td></td>
         </tr>
         <tr>
+            <th>论文类别</th>
+            <td></td>
+        </tr>
+        <tr>
             <th>关键词</th>
             <td></td>
         </tr>
         <tr>
-            <th>期刊名称</th>
+            <th>会议名称</th>
             <td></td>
         </tr>
         <tr>
@@ -53,7 +57,7 @@
             <td ></td>
         </tr>
         <tr>
-            <th>卷号/期号/起止页面</th>
+            <th>起止页码</th>
             <td></td>
         </tr>
         <tr>

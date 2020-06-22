@@ -115,8 +115,8 @@
                                         <td>14</td>
                                         <td>15</td>
                                         <td>
-                                            <a class="open-popup" data-title="编辑" data-size="600,570" href="#">编辑</a>
-                                            <a class="open-popup" data-title="详细信息" data-size="800,600" href="#">详细</a>
+                                            <a class="open-popup" data-title="编辑期刊" data-size="600,570" data-url="${pageContext.request.contextPath}/editJournal.action">编辑</a>
+                                            <a class="open-popup" data-title="详细信息" data-size="800,600" data-url="${pageContext.request.contextPath}/detailJournal.action">详细</a>
                                             <a class="ajax-get" >删除</a>
                                         </td>
                                     </tr>
@@ -138,8 +138,9 @@
                                         <td>14</td>
                                         <td>15</td>
                                         <td>
-                                            <a class="open-popup" data-title="编辑" data-size="600,570" href="#">编辑</a>
-                                            <a class="open-popup" data-title="详细信息" data-size="800,600" href="#">详细</a>
+                                            <a class="open-popup" data-title="编辑期刊" data-size="600,570"
+                                            data-url="${pageContext.request.contextPath}/addJournal.action">编辑</a>
+                                            <a class="open-popup" data-title="详细信息" data-size="800,600" data-url="${pageContext.request.contextPath}/detailJournal.action">详细</a>
                                             <a class="ajax-get" >删除</a>
                                         </td>
                                     </tr>
@@ -260,11 +261,7 @@
                                             <td>15</td>
                                             <td>16</td>
                                             <td>17</td>
-                                            <td>
-                                                <a class="open-popup" data-title="编辑" data-size="600,570" href="#">编辑</a>
-                                                <a class="open-popup" data-title="详细信息" data-size="800,600" href="#">详细</a>
-                                                <a class="ajax-get" >删除</a>
-                                            </td>
+                                            <td></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -280,8 +277,8 @@
                                         <tbody class="layui-table-body">
                                             <tr>
                                                 <td>
-                                                    <a class="open-popup" data-title="编辑" data-size="600,570" href="#">编辑</a>
-                                                    <a class="open-popup" data-title="详细信息" data-size="800,600" href="#">详细</a>
+                                                    <a class="open-popup" data-title="编辑会议" data-size="600,570"  data-url="${pageContext.request.contextPath}/editConference.action">编辑</a>
+                                                    <a class="open-popup" data-title="详细信息" data-size="800,600" data-url="${pageContext.request.contextPath}/detailConference.action">详细</a>
                                                     <a class="ajax-get" >删除</a>
                                                 </td>
                                             </tr>
@@ -295,6 +292,5 @@
             </div>
         </div>
     </div>
-<%--    <script type="text/javascript" src="${pageContext.request.contextPath}/static/lib/dist/xm-select.js"></script>--%>
 </body>
 </html>

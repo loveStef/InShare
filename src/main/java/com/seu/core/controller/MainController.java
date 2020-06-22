@@ -108,11 +108,44 @@ public class MainController {
     }
 
     /**
+     * 编辑期刊
+     */
+    @RequestMapping(value = "/editJournal.action")
+    public String editJournal() {
+        return "paper/editJournal";
+    }
+
+    /**
+     * 期刊详情
+     */
+    @RequestMapping(value = "/detailJournal.action")
+    public String detailJournal() {
+        return "paper/detailJournal";
+    }
+
+
+    /**
      * 添加会议
      */
     @RequestMapping(value = "/addConference.action")
     public String addConference() {
         return "paper/addConference";
+    }
+
+    /**
+     * 编辑会议
+     */
+    @RequestMapping(value = "/editConference.action")
+    public String editConference() {
+        return "paper/editConference";
+    }
+
+    /**
+     * 会议详情
+     */
+    @RequestMapping(value = "/detailConference.action")
+    public String detailConference() {
+        return "paper/detailConference";
     }
     /**
      * 添加奖项
@@ -121,6 +154,20 @@ public class MainController {
     public String addPrize() {
         return "prize/addPrize";
     }
+    /**
+     * 编辑奖项
+     */
+    @RequestMapping(value = "/editPrize.action")
+    public String editPrize() {
+        return "prize/editPrize";
+    }
+    /**
+     * 奖项详情
+     */
+    @RequestMapping(value = "/detailPrize.action")
+    public String detailPrize() {
+        return "prize/detailPrize";
+    }
 
     /**
      * 添加专利
@@ -128,6 +175,20 @@ public class MainController {
     @RequestMapping(value = "/addPatent.action")
     public String addPatent() {
         return "patent/addPatent";
+    }
+    /**
+     * 编辑专利
+     */
+    @RequestMapping(value = "/editPatent.action")
+    public String editPatent() {
+        return "patent/editPatent";
+    }
+    /**
+     * 专利详情
+     */
+    @RequestMapping(value = "/detailPatent.action")
+    public String detailPatent() {
+        return "patent/detailPatent";
     }
 
 }

@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Rita
-  Date: 2020/6/21
-  Time: 1:03
+  Date: 2020/6/22
+  Time: 19:44
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,82 +10,81 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Inshare新增奖项</title>
+    <title>Inshar编辑专利</title>
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/lib/layui/css/layui.css">
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/font-awesome.min.css">
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/main.css">
 </head>
 <body>
-<div class="layui-form inshare-compile inshare-prize">
+<div class="layui-form inshare-compile inshare-patent">
     <form>
         <div class="layui-form-item">
-            <label class="layui-form-label required">奖项名称</label>
+            <label class="layui-form-label required">专利名称</label>
             <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="prizename"  placeholder="请输入奖项名称">
+                <input class="layui-input" type="text" name="patentname"  placeholder="请输入专利名称">
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label required">获奖者</label>
+            <label class="layui-form-label required">申报人/专利权人</label>
             <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="winner" placeholder="请输入获奖者">
+                <input class="layui-input" type="text" name="patentee" placeholder="请申报人/专利权人">
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label required">辅导老师</label>
+            <label class="layui-form-label">申报状态</label>
             <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="tutor" placeholder="请输入辅导老师">
+                <select name="declarationstate" lay-verify="required">
+                    <option value=""></option>
+                    <option value="0">已受理</option>
+                    <option value="1">初步审查</option>
+                    <option value="2">公布</option>
+                    <option value="3">实质审查</option>
+                    <option value="4">授权</option>
+                </select>
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">奖项类型</label>
+            <label class="layui-form-label">专利类型</label>
             <div class="layui-input-inline">
                 <select name="prizestyle" lay-verify="required">
                     <option value=""></option>
-                    <option value="0">设计奖项</option>
-                    <option value="1">其它奖项</option>
+                    <option value="0">发明</option>
+                    <option value="1">实用新型</option>
+                    <option value="2">外观</option>
                 </select>
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">奖项级别</label>
+            <label class="layui-form-label">受理日期</label>
             <div class="layui-input-inline">
-                <select name="prizelevel" lay-verify="required">
-                    <option value=""></option>
-                    <option value="0">国际级</option>
-                    <option value="1">国家级</option>
-                    <option value="2">省部级</option>
-                    <option value="3">校级</option>
-                    <option value="4">其它</option>
-                </select>
+                <input type="text" class="layui-input" id="acceptance-date" placeholder="yyyy-MM-dd">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">授权日期</label>
+            <div class="layui-input-inline">
+                <input type="text" class="layui-input" id="authorization-date" placeholder="yyyy-MM-dd">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label required">申请号</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="applyNo" placeholder="请输入申请号">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label required">公开号</label>
+            <div class="layui-input-inline">
+                <input class="layui-input" type="text" name="publicNo" placeholder="请输入公开号">
             </div>
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label required">获奖等级</label>
-            <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="prizeno" placeholder="请输入获奖等级">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label required">主办单位</label>
-            <div class="layui-input-inline">
-                <input class="layui-input" type="text" name="unit" placeholder="请输入主办单位">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">获奖时间</label>
-            <div class="layui-input-inline">
-                <input type="text" class="layui-input" id="add-prize-calender" placeholder="yyyy-MM-dd">
-            </div>
-        </div>
-
-        <div class="layui-form-item">
-            <label class="layui-form-label">添加证明文件</label>
+            <label class="layui-form-label">更新专利申请书、专利证书</label>
             <div class="layui-input-inline">
                 <button class="layui-btn">上传</button>
             </div>
         </div>
-
 
         <div class="layui-form-item inshare-finally">
             <label class="layui-form-label"></label>

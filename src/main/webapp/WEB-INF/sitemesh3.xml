@@ -25,7 +25,15 @@
   <mapping path="/roleManage.action" exclue="true"/>
   <mapping path="/resetPwd.action" exclue="true"/>
   <mapping path="/addJournal.action" exclue="true"/>
+  <mapping path="/editJournal.action" exclue="true"/>
+  <mapping path="/detailJournal.action" exclue="true"/>
   <mapping path="/addConference.action" exclue="true"/>
+  <mapping path="/editConference.action" exclue="true"/>
+  <mapping path="/detailConference.action" exclue="true"/>
   <mapping path="/addPrize.action" exclue="true"/>
+  <mapping path="/editPrize.action" exclue="true"/>
+  <mapping path="/detailPrize.action" exclue="true"/>
   <mapping path="/addPatent.action" exclue="true"/>
+  <mapping path="/editPatent.action" exclue="true"/>
+  <mapping path="/detailPatent.action" exclue="true"/>
 </sitemesh>

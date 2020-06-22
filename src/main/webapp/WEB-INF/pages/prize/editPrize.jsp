@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Rita
-  Date: 2020/6/21
-  Time: 1:03
+  Date: 2020/6/23
+  Time: 2:25
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Inshare新增奖项</title>
+    <title>Inshar编辑奖项</title>
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/lib/layui/css/layui.css">
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/font-awesome.min.css">
     <link rel="stylesheet" type=text/css href="${pageContext.request.contextPath}/static/css/main.css">
@@ -80,7 +80,7 @@
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">添加证明文件</label>
+            <label class="layui-form-label">更新证明文件</label>
             <div class="layui-input-inline">
                 <button class="layui-btn">上传</button>
             </div>
